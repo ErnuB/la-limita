@@ -6,11 +6,13 @@ export default {
       fontFamily: {
         'curse': ['Back to Black'],
         'base': ['bahnschrift'],
-        'mont': ['Montserrat']
+        'mont': ['Montserrat'],
+        'dk' : ['DK MILLEFEUILLE']
       },
       colors: {
         'tan-limita': '#F6EECC',
-        'tan-dark': '#997519'
+        'tan-dark': '#997519',
+        'orange-limita': '#de6f00'
       }
     }
   },

@@ -1,10 +1,10 @@
 <script>
   export let images = [
-    { path: "/img/img1.png", description: "La Limita" },
-    { path: "/img/img2.png", description: "La Limita" },
-    { path: "/img/img3.png", description: "La Limita" },
-    { path: "/img/img4.png", description: "La Limita" },
-    { path: "/img/img5.png", description: "La Limita" },
+    { path: "/img/img1.jpg", description: "La Limita" },
+    { path: "/img/img2.jpg", description: "La Limita" },
+    { path: "/img/img3.jpg", description: "La Limita" },
+    { path: "/img/img4.jpg", description: "La Limita" },
+    { path: "/img/img5.jpg", description: "La Limita" },
   ];
 
   import { onMount, createEventDispatcher } from "svelte";

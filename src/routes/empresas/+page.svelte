@@ -14,84 +14,63 @@
     background-color: rgb(246, 238, 204);
   }
 
-  .background-section {
-  position: relative;
-  overflow: hidden;
-}
-
-.top-background {
-  position: absolute;
-  left: .5rem;
-  top: .5rem;
-  width: 50%;
-  height: 25%;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-image: url('/img/top-fondo.png');
-  z-index: 0;
-}
-
-.top-right-background {
-  position: absolute;
-  top: .5rem;
-  right: -5rem;
-  width: 50%;
-  height: 50%;
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-image: url('/img/top-right-fondo.png');
-  z-index: 0;
-}
-
-.bottom-background {
-  position: absolute;
-  right: -2rem;
-  width: 50%;
-  height: 50%;
-  background-size: 50%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  bottom: .5rem;
-  background-image: url('/img/bot-fondo.png');
-  z-index: 0;
-}
-
-.bottom-left-background {
-  position: absolute;
-  left: -2rem;
-  width: 50%;
-  height: 50%;
-  background-size: 50%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  bottom: .5rem;
-  background-image: url('/img/bot-left-fondo.png');
-  z-index: 0;
-}
+  iframe {
+    width: 100%;
+    height: auto;
+  }
 
 </style>
 
 <div class="page-background"></div>
-<header>
+<section>
   <div class="w-4/5 m-auto p-5 flex relative">
     <img src="/img/logo.png" alt="La Limita" class="w-auto object-contain">
   </div>
-  <div class="px-10 z-30 relative">
-  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/SecZnw0lLKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <div class="px-2 z-30 relative">
+  <iframe src="https://www.youtube.com/embed/SecZnw0lLKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   </div>
-</header>
+</section>
 <div class="relative flex items-end">
-  <img src="/img/sra.png" alt="" class="absolute top-0 -right-5 z-0 object-scale-down w-1/2">
+  <img src="/img/sra.png" alt="" class="absolute top-0 right-0 z-0 object-scale-down w-1/2">
   <h2 class="font-curse text-5xl mx-4 text-red-800 mt-20 self-end">Desayunos</h2>
 </div>
 <div>
   <Cards />
 </div>
 <div class="relative flex items-end">
-  <img src="/img/venado.png" alt="" class="absolute top-14 -right-5 z-0 object-scale-down w-1/2">
+  <img src="/img/venado.png" alt="" class="absolute top-14 right-0 z-0 object-scale-down w-1/2">
   <h2 class="font-curse text-5xl mx-4 text-red-800 mt-20 self-end">Comidas y <br>Cenas</h2>
 </div>
 <div>
   <Cards2 />
 </div>
-<a href="https://la-limita.alacarta.com.mx"><h2 class="text-2xl font-bold font-mont border-red-800 border-2 rounded-xl bg-tan-limita  p-1 m-6 text-center shadow-[0px_10px_10px_5px_#1a202c]">Menú La Limita</h2></a>
+<div class="relative flex items-end">
+  <h2 class="font-curse text-5xl mx-4 text-orange-limita mt-20 self-end">Entradas</h2>
+</div>
+<div class="w-11/12 bg-white/50 m-4 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
+  <p class="text-orange-limita p-4 font-extrabold">Agrega opciones para compartir con tus invitados:</p>
+  <ul class="px-4 pb-8 list-disc font-normal marker:text-red-800">
+    <li class="flex gap-2"><span>Pan Horneado</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$18</span></li>
+    <li class="flex gap-2"><span>Jocoque con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$69</span></li>
+    <li class="flex gap-2"><span>Guacamole con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$95</span></li>
+    <li class="flex gap-2"><span>Jícama, zanahoria y  pepino</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$65</span></li>
+    <li class="flex gap-2"><span>Coricos 1kg.</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$156</span></li>
+    <li class="flex gap-2"><span>Queso fundido</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$112</span></li>
+    <li class="flex gap-2"><span>Queso fundido con chorizo</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$127</span></li>
+  </ul>
+</div>
+<div class="mb-32">
+  <a href="/"><h2 class="text-2xl font-bold font-mont border-red-800 border-2 rounded-xl bg-tan-limita  p-1 m-6 text-center shadow-[0px_10px_10px_5px_#1a202c]">Menú La Limita</h2></a>
+</div>
+<footer class="fixed bottom-0 bg-amber-100 w-full p-2">
+  <h2 class="text-2xl font-semibold text-center">Reservaciones:</h2>
+  <div class="flex justify-around items-center">
+    <div class="flex flex-col">
+      <a href="https://goo.gl/maps/8GktgZhxGzMXABzV8" target="_blank" class="grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Itaje</a><a href="https://wa.me/5216671058274" target="_blank" class="text-xl"><i class="fa-brands text-green-600 text-xl fa-whatsapp"></i>&thinsp;667 105 82 74</a>
+    </div>
+        <hr>
+    <div class="flex flex-col">
+      <a href="https://goo.gl/maps/8spSZ96hJYvy4bKBA" target="_blank" class="grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Rectoría</a><a href="https://wa.me/5216672023842" target="_blank" class="text-xl"><i class="fa-brands text-green-600 text-xl fa-whatsapp"></i>&thinsp;667 202 38 42</a>
+    </div>
+  </div>
+</footer>

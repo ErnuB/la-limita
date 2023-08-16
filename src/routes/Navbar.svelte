@@ -18,38 +18,42 @@
 
     let isNavOpen = false;
 
-    const toggleNav = () => {
-        isNavOpen = !isNavOpen;
-        const navBar = document.getElementById('nav-bar');
-        navBar.setAttribute('aria-expanded', isNavOpen.toString());
-    };
+    let toggleNav = () => {
+    isNavOpen = !isNavOpen;
+    updateAriaExpanded();
+  };
 
-    const closeNav = () => {
-        isNavOpen = false;
-        const navBar = document.getElementById('nav-bar');
-        navBar.setAttribute('aria-expanded', isNavOpen.toString());
-    };
+  const closeNav = () => {
+    isNavOpen = false;
+    updateAriaExpanded();
+  };
 
-    onMount(() => {
-        const navBar = document.getElementById('nav-bar');
-        navBar.setAttribute('aria-expanded', isNavOpen.toString());
-    });
+  const updateAriaExpanded = () => {
+    const navBar = document.getElementById('nav-bar');
+    if (navBar) {
+      navBar.setAttribute('aria-expanded', isNavOpen.toString());
+    }
+  };
+
+  onMount(() => {
+    updateAriaExpanded();
+  });
 </script>
 
 <section class="sticky top-0 flex flex-col bg-inherit z-30 shadow-[4px_4px_4px_4px_#718096]">
     <div class="flex items-center justify-center bg-white">
         <div class="m-4 grow">
-            <a href="#">
+            <a href="/">
                 <img src="/img/logo.png" alt="La Limita" class="max-h-12">
             </a>
         </div>
-        <button class="p-6" aria-expanded="{isNavOpen}" aria-controls="nav-bar" on:click={toggleNav}><i class="fa-solid text-xl fa-bars"></i></button>
+        <button class="p-6" aria-expanded="{{isNavOpen}}" aria-controls="nav-bar" on:click={toggleNav}><i class="fa-solid text-xl fa-bars"></i></button>
     </div>
 {#if isNavOpen}
-    <nav id="nav-bar" class="flex flex-col items-center justify-center bg-slate-200">
+    <nav id="nav-bar" class="flex flex-col items-center justify-center bg-tan-limita">
         {#each seccion as seccionItem}
         <div class="relative my-1">
-            <a href="#{seccionItem.id}" class="m-1 relative text-2xl z-30 font-curse" on:click={closeNav}>{seccionItem.nombre}</a>
+            <a href="#{seccionItem.id}" class="m-1 relative text-2xl z-30 text-red-800 font-dk" on:click={closeNav}>{seccionItem.nombre}</a>
         </div>
         {/each}
     </nav>

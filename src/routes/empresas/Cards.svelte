@@ -1,44 +1,77 @@
-<script>  
+<script>
+
+  import Modal from './Modal.svelte';
+  import Modal2 from './Modal2.svelte';
+  let platilloToShow = { platillo: '', image: '', descripcion: '' };
+
 
   let items = [
     {
       nombre: 'Paquete 1',
-      pyd: ['Huevos divorciados.', 'Huevos con jamón.','Chilaquiles rojos con huevo.'],
-      precio: "$170"
+      pyd: [
+        {platillo:'Huevos divorciados.', image:'', descripcion:''},
+        {platillo:'Huevos con Jamón.', image:'', descripcion:''},
+        {platillo:'Chilaquiles rojos.', image:'/img/platillos/chilaquiles-rojos.jpg', descripcion:'Chilaquiles rojos con huevo.'},
+      ],
+      precio: "$170",
     },
     {
       nombre: 'Paquete 2',
-      pyd: ['El Arroyo.', 'El Sauce.', 'Chilaquiles poblanos con pollo.'],
-      precio: "$199"
+      pyd: [
+        {platillo:'El Arroyo:', image:'/img/platillos/arroyo.jpg', descripcion:'Tamal frito, chilaquiles rojos, rajas con crema.'},
+        {platillo:'El Sauce:', image:'/img/platillos/sauce.jpg', descripcion:'Tamal frito, machaca con verdura.'},
+        {platillo:'Chilaquiles poblanos.', image:'', descripcion:'Chilaquiles poblanos con pollo.'},
+      ],
+      precio: "$199",
     },
     {
       nombre: 'Paquete 3',
-      pyd: ['Del Pueblo.', 'Huevos revueltos con machaca.','Enchiladas rojas con pollo.', 'La Limita'],
-      precio: "$210"
+      pyd: [
+        {platillo:'Del Pueblo:', image:'/img/platillos/pueblo.jpg', descripcion:'Fajitas de pollo, chilaquiles rojos y huevo revuelto.'},
+        {platillo:'Huevos con machaca.', image:'/img/platillos/machaca-huevo.jpg', descripcion:'Huevos revueltos con machaca acompañados de frijol.'},
+        {platillo:'Enchiladas rojas.', image:'/img/platillos/enchiladas-rojas-pollo.jpg', descripcion:'Enchiladas rojas con pollo (orden de 3).'},
+        {platillo:'La Limita:', image:'/img/platillos/limita.jpg', descripcion:'Machaca con verdura, colachi, chilorio, tamal frito y un huevo revuelto.'},
+      ],
+      precio: "$210",
     },
   ];
 
+  let showModal2 = false;
+
+  function openModal2() {
+    showModal2 = true;
+  }
+
+function closeModal2() {
+  showModal2 = false;
+}
+
+  let showModal = false;
   let containerWidth;
   let scrolledLeft = 0;
 
-  $: if (containerWidth == scrolledLeft) {
-    console.log('hit scroll snap');
+  function openModal() {
+    showModal = true;
+  }
+
+  function closeModal() {
+    showModal = false;
   }
 
   function handleSlide(direction) {
-    const container = document.querySelector('.tab-panels-container');
-    const panelWidth = containerWidth;
-    const numPanels = items.length;
-    const maxScrollLeft = (panelWidth * numPanels) - containerWidth;
+  const container = document.querySelector('.tab-panels-container');
+  const panelWidth = containerWidth;
+  const numPanels = items.length;
 
-    if (direction === "left" && scrolledLeft < maxScrollLeft) {
-      scrolledLeft += panelWidth;
-      container.scroll({ left: scrolledLeft, behavior: 'smooth' });
-    } else if (direction === "right" && scrolledLeft > 0) {
-      scrolledLeft -= panelWidth;
-      container.scroll({ left: scrolledLeft, behavior: 'smooth' });
-    }
+  if (direction === "left") {
+    scrolledLeft = (scrolledLeft + panelWidth) % (panelWidth * numPanels);
+  } else if (direction === "right") {
+    scrolledLeft = (scrolledLeft - panelWidth + panelWidth * numPanels) % (panelWidth * numPanels);
   }
+
+  container.scroll({ left: scrolledLeft, behavior: 'smooth' });
+}
+
 </script>
 
 <style>
@@ -53,7 +86,6 @@
 
   .tab-panel {
     scroll-snap-align: start;
-    /* only supported in Chrome */
     scroll-snap-stop: always;
     flex: 1 0 auto;
   }
@@ -63,14 +95,8 @@
   {#each items as item}
   <div class="relative tab-panel flex justify-around p-8 bg-white/50 flex-col w-11/12 m-5 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
     <div>
-      <i class="fa-solid fa-chevron-left top-1/2 -left-4 mx-2 absolute text-3xl text-carta-primary cursor-pointer" style="
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-            1px 1px 0 #000;
-        " on:click={() => handleSlide("right")}></i>
-      <i class="fa-solid fa-chevron-right top-1/2 -right-4 mx-2 absolute text-3xl text-carta-primary cursor-pointer" style="
-          text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-            1px 1px 0 #000;
-        " on:click={() => handleSlide("left")}></i>
+      <button class="fa-solid fa-chevron-left top-1/2 -left-4 mx-2 absolute text-3xl text-carta-primary cursor-pointer" on:click={() => handleSlide("right")}></button>
+      <button class="fa-solid fa-chevron-right top-1/2 -right-4 mx-2 absolute text-3xl text-carta-primary cursor-pointer" on:click={() => handleSlide("left")}></button>
     </div>
     <div class="tab-panel-content text-carta-primary text-lg uppercase font-bold">
       {item.nombre}
@@ -80,15 +106,28 @@
     </div>
     <div class="my-2">
       <div class="flex font-light px-2">
-        <ul class="list-disc font-bold marker:text-red-800">
+        <ul class="list-disc text-lg marker:text-red-800">
           {#each item.pyd as platillo}
-            <li>{platillo}</li>
+            <li class="my-2">
+              <button
+                class="cursor-pointer"
+                on:click={() => {
+                  platilloToShow = platillo;
+                  openModal2();
+                }}
+              >
+              {platillo.platillo}&thinsp;<i class="text-sm fa-regular fa-image"></i>
+              </button>
+            </li>
           {/each}
+        </ul>
       </div>
     </div>
     <div class="self-end my-8">
-      <p class="text-xs border-2 border-red-800 p-2 rounded-full">Términos y condiciones</p>
+      <button class="text-xs font-semibold border-2 border-red-800 p-2 rounded-full cursor-pointer" on:click={() => openModal()}>Términos y condiciones</button>
+      <Modal show={showModal} closeModal={closeModal} />
     </div>
   </div>
   {/each}
 </div>
+<Modal2 show={showModal2} closeModal2={closeModal2} platillo={platilloToShow} />
