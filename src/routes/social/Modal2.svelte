@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   export let show2;
   export let closeModal2;
   export let platillo = { platillo: '', image: '', descripcion: '' };
@@ -9,7 +10,7 @@
   <div class="z-10 p-4 bg-white rounded-lg shadow-md w-11/12 max-w-lg">
     <div class="text-xl font-bold mb-2 leading-5">{platillo.platillo}</div>
     <div class="flex flex-col">
-      <img src={platillo.image} alt={platillo.platillo} class="w-full object-cover rounded-md mr-4" />
+      <img src={ base }{platillo.image} alt={platillo.platillo} class="w-full object-cover rounded-md mr-4" />
       <div class="flex-1">
         <p class="text-lg font-semibold">{platillo.descripcion}</p>
       </div>

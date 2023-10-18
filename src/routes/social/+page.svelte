@@ -1,5 +1,6 @@
 <script>
-  import Cards from "./Cards.svelte";
+  import { base } from '$app/paths';
+  import Cards from "./Cards.svelte"
   import Cards2 from "./Cards2.svelte";
   import Carrusel from "./Carrusel.svelte";
 </script>
@@ -25,21 +26,21 @@
 <div class="page-background"></div>
 <section>
   <div class="w-4/5 m-auto p-5 flex relative">
-    <img src="/img/logo.png" alt="La Limita" class="w-auto object-contain">
+    <img src="{ base }/img/logo.png" alt="La Limita" class="w-auto object-contain">
   </div>
 </section>
 <div class="p-2">
   <Carrusel />
 </div>
 <div class="relative flex items-end">
-  <img src="/img/sra.png" alt="" class="absolute top-0 right-0 z-0 object-scale-down w-1/2">
+  <img src="{ base }/img/sra.png" alt="" class="absolute top-0 right-0 z-0 object-scale-down w-1/2">
   <h2 class="font-curse text-5xl mx-4 text-red-800 mt-20 self-end">Desayunos</h2>
 </div>
 <div>
   <Cards />
 </div>
 <div class="relative flex items-end">
-  <img src="/img/venado.png" alt="" class="absolute top-14 right-0 z-0 object-scale-down w-1/2">
+  <img src="{ base }/img/venado.png" alt="" class="absolute top-14 right-0 z-0 object-scale-down w-1/2">
   <h2 class="font-curse text-5xl mx-4 text-red-800 mt-20 self-end">Comidas y <br>Cenas</h2>
 </div>
 <div>
@@ -49,9 +50,9 @@
   <iframe src="https://www.youtube.com/embed/B5vkD-3C72Y?si=NQUqC-P_S14lTU9q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 </div>
 <div class="ml-1 flex max-w-11/12">
-  <img src="/img/top-fondo.png" alt="Greca" class="w-1/5 object-contain">
+  <img src="{ base }/img/top-fondo.png" alt="Greca" class="w-1/5 object-contain">
   <h2 class="font-curse text-5xl mx-4 text-orange-limita mt-10 self-end">Entradas</h2>
-  <img src="/img/top-right-fondo.png" alt="Greca" class="w-1/5 object-contain">
+  <img src="{ base }/img/top-right-fondo.png" alt="Greca" class="w-1/5 object-contain">
 </div>
 <div class="w-11/12 bg-white/50 m-4 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
   <p class="text-orange-limita p-4 font-extrabold">Agrega opciones para compartir con tus invitados:</p>
@@ -66,11 +67,11 @@
   </ul>
 </div>
 <div class="ml-1 flex justify-between max-w-11/12">
-  <img src="/img/bot-left-fondo.png" alt="Greca" class="w-1/5 object-contain">
-  <img src="/img/bot-fondo.png" alt="Greca" class="w-1/5 object-contain">
+  <img src="{ base }/img/bot-left-fondo.png" alt="Greca" class="w-1/5 object-contain">
+  <img src="{ base }/img/bot-fondo.png" alt="Greca" class="w-1/5 object-contain">
 </div>
 <div class="mb-32">
-  <a href="/menu"><h2 class="text-2xl font-bold font-mont border-red-800 border-2 rounded-xl bg-tan-limita p-1 m-6 text-center shadow-[0px_10px_10px_5px_#1a202c]">Menú La Limita</h2></a>
+  <a href="{ base }/menu"><h2 class="text-2xl font-bold font-mont border-red-800 border-2 rounded-xl bg-tan-limita p-1 m-6 text-center shadow-[0px_10px_10px_5px_#1a202c]">Menú La Limita</h2></a>
 </div>
 <footer class="fixed bottom-0 bg-amber-100 w-full p-2 z-30">
   <h2 class="text-2xl font-semibold text-center">Reservaciones:</h2>

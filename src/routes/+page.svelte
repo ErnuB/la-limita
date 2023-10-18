@@ -1,5 +1,6 @@
 <script>
     import Carrusel from "./Carrusel.svelte";
+    import { base } from '$app/paths';
     
 
     let isOverlayOpen = false;
@@ -21,7 +22,7 @@
 </script>
 
 <style>
-  .background-section {
+  /* .background-section {
   position: relative;
   overflow: hidden;
 }
@@ -74,7 +75,7 @@
   bottom: .5rem;
   background-image: url('/img/bot-left-fondo.png');
   z-index: 0;
-}
+} */
 
 </style>
 
@@ -84,8 +85,8 @@
 
 <section class="my-2">
   <div class="w-4/5 m-auto p-2 flex relative">
-    <img src="/img/logo.png" alt="La Limita" class="w-auto object-contain z-10">
-    <img src="/img/sra.png" alt="" class="absolute top-0 -right-5 z-0 object-scale-down w-1/2">
+    <img src="{ base }/img/logo.png" alt="La Limita" class="w-auto object-contain z-10">
+    <img src="{ base }/img/sra.png" alt="" class="absolute top-0 -right-5 z-0 object-scale-down w-1/2">
   </div>
   <div class="p-1">
     <Carrusel />
@@ -94,19 +95,19 @@
 <div class="flex justify-center flex-col items-center font-mont px-4 pt-1 mb-20">
   <p class="text-center font-dk text-red-800 text-4xl">¡Descubre nuestros paquetes de eventos!</p>
   <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
-    <a href="/empresas">Eventos Empresariales</a>
+    <a href="{ base }/empresas">Eventos Empresariales</a>
   </div>
   <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
-    <a href="/social">Eventos Sociales</a>
+    <a href="{ base }/social">Eventos Sociales</a>
   </div>
   <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
-    <a href="/infantil">Menú Infantil</a>
+    <a href="{ base }/infantil">Menú Infantil</a>
   </div>
   <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
-    <a href="/menu">Menú La Limita</a>
+    <a href="{ base }/menu">Menú La Limita</a>
   </div>
   <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
-    <a href="/factura">Facturación</a>
+    <a href="{ base }/factura">Facturación</a>
   </div>
 </div>
 <footer class="fixed bottom-0 bg-amber-100 w-full p-4 z-30">

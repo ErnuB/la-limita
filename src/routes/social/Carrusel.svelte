@@ -1,4 +1,5 @@
 <script>
+  import { base } from '$app/paths';
   export let images = [
     { path: "/img/social/img1.jpg", description: "La Limita" },
     { path: "/img/social/img2.jpg", description: "La Limita" },
@@ -83,7 +84,7 @@
 <div class="carrousel shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]" on:swipeleft={() => handleSwipe("left")} on:swiperight={() => handleSwipe("right")}>
   {#each images as image, index}
     <img
-      src={image.path}
+      src={ base }{image.path}
       alt={image.description}
       class:current={index === currentIndex}
       class:next={index === (currentIndex + 1) % images.length}

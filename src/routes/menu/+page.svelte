@@ -1,6 +1,7 @@
 <script>
-    import Navbar from "./Navbar.svelte";
-    import Modal from "./Modal.svelte";
+  import { base } from '$app/paths';
+  import Navbar from "./Navbar.svelte";
+  import Modal from "./Modal.svelte";
     
     let isOverlayOpen = false;
     let selectedImage = null;
@@ -60,9 +61,9 @@
 
 <div id="empezar" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-8 relative">
-  <img src="/img/empezar.jpg" alt="Para Empezar">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/empezar.jpg" alt="Para Empezar">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
       <li class="font-bold gap-3 mx-3 relative my-2">
         <div class="flex  items-center gap-1">
@@ -158,9 +159,9 @@
 </section>
 <div id="bebidas" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/bebidas.jpg" alt="Bebidas">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/bebidas.jpg" alt="Bebidas">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <h2 class="mx-2 font-dk text-3xl text-red-800 z-10">Frescas o malteadas</h2>
     <h2 class="mx-2 mt-3 font-dk text-2xl text-orange-500 z-10">Jugos 100% naturales</h2>
@@ -420,9 +421,9 @@
 </section>
 <div id="huevos" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/comal.jpg" alt="Del comal a su mesa">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/comal.jpg" alt="Del comal a su mesa">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <div class="flex flex-col relative justify-center items-center pt-2 z-0">
       <h3 class="mx-6 text-center text-sm">(Deliciosos huevos, incluyen frijolitos con queso espolvoreado y totopos.)</h3>
   </div>
@@ -519,9 +520,9 @@
 </section>
 <div id="omeletes" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/omelette.jpg" alt="Omeletes">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/omelette.jpg" alt="Omeletes">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">
@@ -573,9 +574,9 @@
 </section>
 <div id="desvelados" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/desvelados.jpg" alt="Para los desvelados">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/desvelados.jpg" alt="Para los desvelados">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <h2 class="text-center mt-3 font-dk text-2xl text-orange-500 z-10">Sólo sábados y domingos</h2>    
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
@@ -635,9 +636,9 @@
 </section>
 <div id="combinaciones" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/combinaciones.jpg" alt="Combinaciones">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/combinaciones.jpg" alt="Combinaciones">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <div class="flex flex-col relative justify-center items-center pt-2 z-0">
       <h3 class="mx-6 text-center text-sm">(Incluye frijolitos con queso espolvoreado y totopos.)</h3>
       <h3 class="mx-6 text-center text-sm">⭐= Favoritos</h3>
@@ -695,7 +696,7 @@
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
         <span class="text-sm font-medium">$119</span>
       </div>
-      <p class="max-w-[16rem] text-xs font-semibold mx-1">Taquito de machaca en tortilla de maíz acompañado de queso gratinado coronado con chotizo, un huevo y aguacate.</p>
+      <p class="max-w-[16rem] text-xs font-semibold mx-1">Taquito de machaca en tortilla de maíz acompañado de queso gratinado coronado con chorizo, un huevo y aguacate.</p>
     </li>
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">
@@ -836,9 +837,9 @@
 </section>
 <div id="caldos" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/calditos.jpg" alt="Caldos">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/calditos.jpg" alt="Caldos">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">
@@ -872,9 +873,9 @@
 </section>
 <div id="sandwich" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/sandwich.jpg" alt="Sandwich, tortas y hamburguesas">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/sandwich.jpg" alt="Sandwich, tortas y hamburguesas">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <div class="flex flex-col relative justify-center items-center pt-12 z-0">
       <h2 class="font-body text-3xl text-red-800 font-dk text-center z-10">Sándwich <br> tortas y hamburguesas</h2>
   </div>  
@@ -936,9 +937,9 @@
 </section>
 <div id="carne" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/arroz.jpg" alt="Carnes">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/arroz.jpg" alt="Carnes">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <div class="flex flex-col relative justify-center items-center pt-2 z-0">
       <h3 class="mx-6 text-center text-sm">🕜= Pregunta por los tiempo de elaboración</h3>
   </div>  
@@ -1020,9 +1021,9 @@
 </section>
 <div id="sinaloenses" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/antojitos.jpg" alt="Antojitos sinaloenses">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/antojitos.jpg" alt="Antojitos sinaloenses">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">
@@ -1109,9 +1110,9 @@
 </section>
 <div id="ensaladas" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/saludable.jpg" alt="Pa'la figura">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/saludable.jpg" alt="Pa'la figura">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">
@@ -1163,9 +1164,9 @@
 </section>
 <div id="postres" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/postres.jpg" alt="Postres">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/postres.jpg" alt="Postres">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">

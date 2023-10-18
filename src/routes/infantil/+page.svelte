@@ -1,6 +1,6 @@
 <script>
     import Modal from "./Modal.svelte";
-    
+    import { base } from '$app/paths';
 
     let isOverlayOpen = false;
     let selectedImage = null;
@@ -34,9 +34,9 @@
 </svelte:head>
 
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/peques.jpg" alt="Menú peques">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/peques.jpg" alt="Menú peques">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-42 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">
@@ -97,9 +97,9 @@
 </section>
 <div id="bebidas" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-16">
-  <img src="/img/bebidas.jpg" alt="Bebidas">
-  <img src="/img/hojas-izq.svg" alt="Hojas" class="absolute top-0 left-0"> 
-  <img src="/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
+  <img src="{ base }/img/bebidas.jpg" alt="Bebidas">
+  <img src="{ base }/img/hojas-izq.svg" alt="Hojas" class="absolute top-0 left-0"> 
+  <img src="{ base }/img/hojas-der.svg" alt="Hojas" class="absolute bottom-0 right-0">
   <ul class="flex flex-col font-body font-medium py-4">
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex  items-center gap-1">
@@ -149,7 +149,7 @@
   <div class="my-14"></div>
 </section>
 <div class="">
-  <a href="/"><h2 class="text-2xl font-bold font-mont border-red-800 border-2 rounded-xl bg-tan-limita  p-1 m-6 text-center shadow-[0px_10px_10px_5px_#1a202c]">Menú Principal</h2></a>
+  <a href="{ base }/"><h2 class="text-2xl font-bold font-mont border-red-800 border-2 rounded-xl bg-tan-limita  p-1 m-6 text-center shadow-[0px_10px_10px_5px_#1a202c]">Menú Principal</h2></a>
 </div>
 
 {#if isOverlayOpen}

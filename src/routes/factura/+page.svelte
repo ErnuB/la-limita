@@ -1,10 +1,12 @@
 <script>
+  import { base } from '$app/paths';
 	import Carrusel from "../Carrusel.svelte";
 </script>
+
 <section class="my-6">
     <div class="w-4/5 m-auto p-2 flex relative">
-        <img src="/img/logo.png" alt="La Limita" class="w-auto object-contain z-10">
-        <img src="/img/sra.png" alt="" class="absolute top-0 -right-5 z-0 object-scale-down w-1/2">
+        <img src="{ base }/img/logo.png" alt="La Limita" class="w-auto object-contain z-10">
+        <img src="{ base }/img/sra.png" alt="" class="absolute top-0 -right-5 z-0 object-scale-down w-1/2">
     </div>
 </section>
 <div class="p-1">
