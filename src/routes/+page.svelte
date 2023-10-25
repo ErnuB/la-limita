@@ -107,6 +107,9 @@
     <a href="{ base }/menu">Menú La Limita</a>
   </div>
   <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
+    <a href="{ base }/nuevo">¡Lo Nuevo!</a>
+  </div>
+  <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
     <a href="{ base }/factura">Facturación</a>
   </div>
 </div>

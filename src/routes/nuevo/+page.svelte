@@ -1,6 +1,5 @@
 <script>
   import { base } from '$app/paths';
-	import Carrusel from "../Carrusel.svelte";
 </script>
 
 <section class="my-6">
@@ -9,21 +8,15 @@
         <img src="{ base }/img/sra.png" alt="" class="absolute top-0 -right-5 z-0 object-scale-down w-1/2">
     </div>
 </section>
-<div class="p-1">
-    <Carrusel />
-</div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-4 relative z-20">
-    <div class="p-4">
-      <h2 class="text-center text-3xl">Facturación:</h2>
-      <div class="flex justify-around items-center">
-        <div class="flex flex-col">
-          <a href="https://goo.gl/maps/8GktgZhxGzMXABzV8" target="_blank" class="grow text-lg font-semibold text-center">Itaje</a><a href="https://wa.me/5216671058274" target="_blank" class="text-lg"><i class="fa-brands text-green-600 text-xl fa-whatsapp"></i>&thinsp;667 105 8274</a>
-        </div>
-            <hr>
-        <div class="flex flex-col">
-          <a href="https://goo.gl/maps/8spSZ96hJYvy4bKBA" target="_blank" class="grow text-lg font-semibold text-center">Rectoría</a><a href="https://wa.me/5216672023842" target="_blank" class="text-lg"><i class="fa-brands text-green-600 text-xl fa-whatsapp"></i>&thinsp;667 202 3842</a>
-        </div>
-      </div>
+    <div class="p-2">
+      <img src="{ base }/img/nuevo-cafe.jpg" alt="Lo Nuevo">
+    </div>
+    <div class="p-2">
+      <img src="{ base }/img/promo-frente.jpg" alt="Lo Nuevo">
+    </div>
+    <div class="p-2">
+      <img src="{ base }/img/promo-vuelta.jpg" alt="Lo Nuevo">
     </div>
   </section>
   <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-4">

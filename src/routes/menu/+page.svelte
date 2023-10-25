@@ -6,6 +6,7 @@
     let isOverlayOpen = false;
     let selectedImage = null;
     let alternativeText = null;
+    let show = true;
 
     function openModal(imagen, altText) {
         selectedImage = imagen;
@@ -58,7 +59,15 @@
 </svelte:head>
 
 <Navbar />
-
+<div class="{show? "fixed" : "hidden"} top-1/3 left-0 items-center justify-center z-40">
+  <button class="fixed inset-0 bg-black opacity-90" on:click={() => show = false}></button>
+  <div class="relative">
+    <button class="absolute top-2 right-8 text-white" on:click={() => show = false}>
+      <i class="fa-solid fa-times font-bold text-2xl"></i>
+    </button>
+      <img class="w-11/12 m-auto" src="{ base }/img/promo-frente.jpg" alt="promo"/>
+  </div>
+</div>
 <div id="empezar" class="scroll-mt-20"></div>
 <section class="bg-tan-limita w-11/12 background-section shadow-[2px_2px_4px_2px_#666666] mx-auto my-8 relative">
   <img src="{ base }/img/empezar.jpg" alt="Para Empezar">
@@ -396,15 +405,6 @@
           <h2>Té de adorar (manzanilla)</h2>
           <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
           <span class="text-sm font-medium">$36</span>
-        </div>
-        <p class="max-w-[16rem] text-xs font-semibold mx-1">300 ml. no refill</p>
-      </li>
-      <li class="font-bold gap-3 mx-3 relative my-2">
-        <div class="flex  items-center gap-1">
-          <button on:click={() => openModal('/img/platillos/chocolate.jpg','Chocolate caliente')}>
-            Chocolate caliente&thinsp;<i class="fa-regular fa-image font-normal"></i></button>
-          <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-          <span class="text-sm font-medium">$47</span>
         </div>
         <p class="max-w-[16rem] text-xs font-semibold mx-1">300 ml. no refill</p>
       </li>
