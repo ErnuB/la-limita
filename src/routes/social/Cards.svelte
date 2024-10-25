@@ -10,28 +10,33 @@
     {
       nombre: 'Paquete 1',
       pyd: [
-        {platillo:'Huevos divorciados.', image:'/img/platillos/divorciados.jpg', descripcion:''},
-        {platillo:'Huevos con Jamón.', image:'/img/platillos/huevos-jamon.jpg', descripcion:''},
-        {platillo:'Chilaquiles rojos.', image:'/img/platillos/avelino.jpg', descripcion:'Chilaquiles rojos con huevo.'},
+        {platillo:'Huevos divorciados o rancheros.', image:'/img/platillos/divorciados.jpg', descripcion:''},
+        {platillo:'Huevos revueltos con Jamón ó chorizo ó tocino.', image:'/img/platillos/huevos-jamon.jpg', descripcion:''},
+        {platillo:'Chilaquiles rojos y huevo revuelto.', image:'/img/platillos/chilaquiles-huevo-revuelto.jpg', descripcion:'Chilaquiles rojos con huevo.'},
+        {platillo:'Huevos revueltos con nopales ó ejotes.', image:'/img/platillos/huevos-nopales.jpg', descripcion:'Huveos con nopal.'},
       ],
       precio: "$179",
     },
     {
       nombre: 'Paquete 2',
       pyd: [
-        {platillo:'El Arroyo:', image:'/img/platillos/arroyo.jpg', descripcion:'Tamal frito, chilaquiles rojos, rajas con crema.'},
-        {platillo:'El Sauce:', image:'/img/platillos/sauce.jpg', descripcion:'Tamal frito, machaca con verdura.'},
-        {platillo:'Chilaquiles poblanos.', image:'/img/platillos/chilaquiles-poblanos.jpg', descripcion:'Chilaquiles poblanos con pollo.'},
+        {platillo:'El Metate.', image:'/img/platillos/metate.jpg', descripcion:'Machaca con verdura, tamal de elote acompañado de un huevo o chilaquiles.'},
+        {platillo:'El Arroyo.', image:'/img/platillos/arroyo.jpg', descripcion:'Tamal frito, chilaquiles rojos, rajas con crema.'},
+        {platillo:'Chilaquiles rojos, verdes ó poblanos con pollo.', image:'/img/platillos/chilaquiles-poblanos.jpg', descripcion:'Chilaquiles poblanos con pollo.'},
+        {platillo:'El Bule.', image:'/img/platillos/bule.jpg', descripcion:'Hot cakes (dos piezas), acompañados de 2 huevos con jamón o tocino.'},
+        {platillo:'La Pingüica.', image:'/img/platillos/pinguica.jpg', descripcion:'Chicharrón a la mexicana o en salsa a elegir, chilaquiles acompañado de un huevo.'},
+        {platillo:'Omelet Popeye.', image:'/img/platillos/popeye.jpg', descripcion:'Revuelto de espinacas, relleno de champiñón, jamón y mezcla de quesos, acompañado con ensalada. No incluye frijol.'},
+        {platillo:'La Máscara.', image:'/img/platillos/mascara.jpg', descripcion:'Ejotes con verdura, nopales con verdura,colachi, aguacate, incluye queso fresco (25g).'},
       ],
       precio: "$209",
     },
     {
       nombre: 'Paquete 3',
       pyd: [
-        {platillo:'Del Pueblo:', image:'/img/platillos/pueblo.jpg', descripcion:'Fajitas de pollo a la plancha, chilaquiles rojos y huevo revuelto.'},
-        {platillo:'Huevos con machaca.', image:'/img/platillos/machaca-huevo.jpg', descripcion:'Huevos revueltos con machaca acompañados de frijol.'},
-        {platillo:'Enchiladas rojas.', image:'/img/platillos/enchiladas-rojas-pollo.jpg', descripcion:'Enchiladas rojas con pollo (orden de 3).'},
-        {platillo:'La Limita:', image:'/img/platillos/limita.jpg', descripcion:'Machaca con verdura, colachi, chilorio, tamal frito y un huevo revuelto.'},
+        {platillo:'Del Pueblo.', image:'/img/platillos/pueblo.jpg', descripcion:'Fajitas de pollo a la plancha, chilaquiles rojos y huevo revuelto.'},
+        {platillo:'Huevos revueltos con machaca.', image:'/img/platillos/machaca-huevo.jpg', descripcion:'Huevos revueltos con machaca acompañados de frijol.'},
+        {platillo:'La Limita.', image:'/img/platillos/limita.jpg', descripcion:'Machaca con verdura, colachi, chilorio, tamal frito y un huevo revuelto.'},
+        {platillo:'Desayuno Vaquero.', image:'/img/platillos/vaquero.jpg', descripcion:'Puntas de top sirloin, un huevo y chilaquiles.'},
       ],
       precio: "$220",
     },
@@ -113,7 +118,7 @@
           {#each item.pyd as platillo}
             <li class="my-2">
               <button
-                class="cursor-pointer"
+                class="cursor-pointer text-left"
                 on:click={() => {
                   platilloToShow = platillo;
                   openModal2();

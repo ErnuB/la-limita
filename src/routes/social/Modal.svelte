@@ -6,10 +6,10 @@
   <div class="fixed inset-0 z-50 flex items-center justify-center" class:invisible={!show}>
 	<button class="absolute inset-0 bg-black opacity-50" on:click={closeModal}></button>
 		<div class="z-10 p-4 bg-white rounded-lg shadow-md w-11/12 max-w-lg">
-		  <div class="text-xl font-bold mb-2 leading-5">LE OFRECEMOS EN CADA PAQUETE:</div>
+		  <div class="text-xl font-bold mb-2 leading-5 text-red-800">LE OFRECEMOS EN CADA PAQUETE:</div>
 		  <div class="max-h-96 overflow-auto">
 			<div class:style={"max-height: inherit;"}>
-			  <ul class="text-black list-disc list-inside"><p class="text-red-800 text-lg font-extrabold tracking-tight leading-5">En el consumo de 50 invitados o más incluye 2 horas de música en vivo.</p>
+			  <ul class="text-black list-disc list-inside">
 				<li> 1 jarra de agua de sabor por cada 2 invitados (aplica en comidas o cenas).</li>
 				<li> Servicio de meseros.</li>
 				<li> Vajilla de barro.</li>

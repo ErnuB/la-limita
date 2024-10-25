@@ -1,11 +1,12 @@
 <script>
     import Carrusel from "./Carrusel.svelte";
     import { base } from '$app/paths';
+    import Modal from "./Modal.svelte";
     
-
     let isOverlayOpen = false;
     let selectedImage = null;
     let alternativeText = null;
+    let show = false;
 
     function openModal(imagen, altText) {
         selectedImage = imagen;
@@ -19,7 +20,21 @@
         isOverlayOpen = false;
     };
 
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '441959758733405');
+    fbq('track', 'PageView');
 </script>
+
+<noscript>
+  <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=441959758733405&ev=PageView&noscript=1"/>
+</noscript>
 
 <style>
   /* .background-section {
@@ -82,6 +97,15 @@
 <svelte:head>
   <title>Menú La Limita</title>
 </svelte:head>
+<!-- <div class="{show? "fixed" : "hidden"} top-1/3 left-0 items-center justify-center z-40">
+  <button class="fixed inset-0 bg-black opacity-90" on:click={() => show = false}></button>
+  <div class="relative">
+    <button class="absolute top-2 right-8 text-white" on:click={() => show = false}>
+      <i class="fa-solid fa-times font-bold text-2xl"></i>
+    </button>
+      <img class="w-11/12 m-auto" src="{ base }/img/posada.jpg" alt="Festeja tu posada con nosotros"/>
+  </div>
+</div> -->
 
 <section class="my-2">
   <div class="w-4/5 m-auto p-2 flex relative">
@@ -112,15 +136,18 @@
   <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
     <a href="{ base }/factura">Facturación</a>
   </div>
+  <div class="p-1 m-2 w-4/5 text-center border-red-800 border-2 font-bold text-xl rounded-xl bg-tan-limita shadow-[2px_2px_4px_2px_#666666]">
+    <a href="https://lalimita.com/formulario">Bolsa de Trabajo</a>
+  </div>
 </div>
 <footer class="fixed bottom-0 bg-amber-100 w-full p-4 z-30">
   <div class="flex justify-around items-center">
     <div class="flex flex-col">
-      <a href="https://goo.gl/maps/8spSZ96hJYvy4bKBA" target="_blank" class="leading-3 grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Itaje</a><a href="https://wa.me/5216671058274" target="_blank" class="text-sm self-center"><i class="fa-brands text-green-600 text-lg fa-whatsapp"></i>&thinsp;667 105 82 74</a>
+      <a href="https://maps.app.goo.gl/N7ZLDXsUMdSQYW8s8" target="_blank" class="leading-3 grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Itaje</a><a href="https://wa.me/5216671058274" target="_blank" class="text-sm self-center"><i class="fa-brands text-green-600 text-lg fa-whatsapp"></i>&thinsp;667 105 82 74</a>
     </div>
     <hr>
     <div class="flex flex-col">
-      <a href="https://goo.gl/maps/8spSZ96hJYvy4bKBA" target="_blank" class="leading-3 grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Rectoría</a><a href="https://wa.me/5216672023842" target="_blank" class="text-sm self-center"><i class="fa-brands text-green-600 text-lg fa-whatsapp"></i>&thinsp;667 202 38 42</a>
+      <a href="https://maps.app.goo.gl/sZ9C4Yei9MofMoKJ8" target="_blank" class="leading-3 grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Rectoría</a><a href="https://wa.me/5216672023842" target="_blank" class="text-sm self-center"><i class="fa-brands text-green-600 text-lg fa-whatsapp"></i>&thinsp;667 202 38 42</a>
     </div>
   </div>
 </footer>

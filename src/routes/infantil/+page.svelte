@@ -43,7 +43,7 @@
         <button on:click={() => openModal('/img/platillos/papalote.jpg','Sopita con fideos')}>
           Papalote&thinsp;<i class="fa-regular fa-image font-normal"></i></button>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$55</span>
+        <span class="text-sm font-medium">$58</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">Sopita de pollo con fideos, acompañada de galleta salada.</p>
     </li>
@@ -52,7 +52,7 @@
         <button on:click={() => openModal('/img/platillos/trompo.jpg','Quequis y huevito con jamón')}>
           Trompo&thinsp;<i class="fa-regular fa-image font-normal"></i></button>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$93</span>
+        <span class="text-sm font-medium">$98</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">1 huevo revuelto con jamón, 2 mini panquequis y tarrito de fruta.</p>
     </li>
@@ -61,7 +61,7 @@
         <button on:click={() => openModal('/img/platillos/yoyo.jpg','Hamburguesa')}>
           Yoyo&thinsp;<i class="fa-regular fa-image font-normal"></i></button>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$104</span>
+        <span class="text-sm font-medium">$109</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">Hamburguesa con queso y papas fritas.</p>
     </li>
@@ -70,7 +70,7 @@
         <button on:click={() => openModal('/img/platillos/arcoiris.jpg','Quequis, huevito, salchipulpo y fruta')}>
           Arcoiris&thinsp;<i class="fa-regular fa-image font-normal"></i></button>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$112</span>
+        <span class="text-sm font-medium">$118</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">3 ricos panquequis, un huevito revuelto, 2 pulpitos de salchicha y tarro de fruta.</p>
     </li>
@@ -79,7 +79,7 @@
         <button on:click={() => openModal('/img/platillos/matatena.jpg','Papas fritas con salchipapas')}>
           Matatena&thinsp;<i class="fa-regular fa-image font-normal"></i></button>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$60</span>
+        <span class="text-sm font-medium">$63</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">Órden de papas fritas con 2 pulpitos de salchicha y tarrito de queso amarillo.</p>
     </li>
@@ -88,7 +88,7 @@
         <button on:click={() => openModal('/img/platillos/balero.jpg','Sandwich con huevito')}>
           Balero&thinsp;<i class="fa-regular fa-image font-normal"></i></button>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$104</span>
+        <span class="text-sm font-medium">$109</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">Rica combinacón de sandwich a la plancha con queso, un huevito revuelto, tarrito de fruta y papas fritas con catsup.</p>
     </li>
@@ -105,7 +105,7 @@
       <div class="flex  items-center gap-1">
         <h2>Jugo de naranja</h2>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$44</span>
+        <span class="text-sm font-medium">$46</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">Chico.</p>
     </li>
@@ -113,7 +113,7 @@
       <div class="flex items-center gap-1">
         <h2>Vaso de leche fría</h2>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$25</span>
+        <span class="text-sm font-medium">$26</span>
       </div>
       <p class="max-w-[16rem] text-xs font-semibold mx-1">355 ml.</p>
     </li>
@@ -121,28 +121,35 @@
       <div class="flex items-center gap-1">
         <h2>Chocomilk</h2>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$47</span>
+        <span class="text-sm font-medium">$49</span>
       </div>
     </li>
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex items-center gap-1">
         <h2>Licuado de fresa</h2>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$47</span>
+        <span class="text-sm font-medium">$49</span>
       </div>
     </li>
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex items-center gap-1">
-        <h2>Licuado de fresa</h2>
+        <h2>Frappé de óreo</h2>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$47</span>
+        <span class="text-sm font-medium">$64</span>
+      </div>
+    </li>
+    <li class="font-bold gap-3 mx-3 relative my-2">
+      <div class="flex items-center gap-1">
+        <h2>Malteada de fresa</h2>
+        <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
+        <span class="text-sm font-medium">$64</span>
       </div>
     </li>
     <li class="font-bold gap-3 mx-3 relative my-2">
       <div class="flex items-center gap-1">
         <h2>Frapuccino con chispitas</h2>
         <div class="relative grow border-b-2 border-dotted border-black top-1"></div>
-        <span class="text-sm font-medium">$63</span>
+        <span class="text-sm font-medium">$69</span>
       </div>
     </li>
   </ul>

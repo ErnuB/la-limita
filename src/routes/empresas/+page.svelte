@@ -56,13 +56,14 @@
 <div class="w-11/12 bg-white/50 m-4 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
   <p class="text-orange-limita p-4 font-extrabold">Agrega opciones para compartir con tus invitados:</p>
   <ul class="px-4 pb-8 list-disc font-normal marker:text-red-800">
-    <li class="flex gap-2"><span>Pan Horneado</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$19</span></li>
-    <li class="flex gap-2"><span>Jocoque con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$72</span></li>
-    <li class="flex gap-2"><span>Guacamole con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$109</span></li>
-    <li class="flex gap-2"><span>Jícama, zanahoria y  pepino</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$68</span></li>
-    <li class="flex gap-2"><span>Coricos 1kg.</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$164</span></li>
-    <li class="flex gap-2"><span>Queso fundido</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$117</span></li>
-    <li class="flex gap-2"><span>Queso fundido con chorizo</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$133</span></li>
+    <li class="flex gap-2"><span>Pan Horneado</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$20</span></li>
+    <li class="flex gap-2"><span>Jocoque 125g. con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$76</span></li>
+    <li class="flex gap-2"><span>Guacamole con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$114</span></li>
+    <li class="flex gap-2"><span>Jícama, zanahoria y  pepino</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$72</span></li>
+    <li class="flex gap-2"><span>Coricos 1kg.</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$180</span></li>
+    <li class="flex gap-2"><span>Queso fundido</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$123</span></li>
+    <li class="flex gap-2"><span> - con chorizo/chilorio</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$140</span></li>
+    <li class="flex gap-2"><span>Nachos con cochinita</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$125</span></li>
   </ul>
 </div>
 <div class="ml-1 flex justify-between max-w-11/12">

@@ -1,5 +1,5 @@
 {
-	"name": "mimocorito",
+	"name": "lalimita",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -13,14 +13,14 @@
 		"@sveltejs/adapter-auto": "^2.0.0",
 		"@sveltejs/adapter-static": "^2.0.2",
 		"@sveltejs/kit": "^1.5.0",
-		"autoprefixer": "^10.4.14",
+		"autoprefixer": "^10.4.20",
 		"hamburger-menu-svelte": "^2.2.0",
-		"postcss": "^8.4.24",
+		"postcss": "^8.4.47",
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
-		"svelte": "^3.54.0",
+		"svelte": "^5.0.0-next.272",
 		"svelte-hamburgers": "^4.0.2",
-		"tailwindcss": "^3.3.2",
+		"tailwindcss": "^3.4.14",
 		"vite": "^4.3.0"
 	},
 	"type": "module"

@@ -57,13 +57,14 @@
 <div class="w-11/12 bg-white/50 m-4 shadow-[4.0px_8.0px_8.0px_rgba(0,0,0,0.38)]">
   <p class="text-orange-limita p-4 font-extrabold">Agrega opciones para compartir con tus invitados:</p>
   <ul class="px-4 pb-8 list-disc font-normal marker:text-red-800">
-    <li class="flex gap-2"><span>Pan Horneado</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$19</span></li>
-    <li class="flex gap-2"><span>Jocoque con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$72</span></li>
-    <li class="flex gap-2"><span>Guacamole con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$109</span></li>
-    <li class="flex gap-2"><span>Jícama, zanahoria y  pepino</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$68</span></li>
-    <li class="flex gap-2"><span>Coricos 1kg.</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$164</span></li>
-    <li class="flex gap-2"><span>Queso fundido</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$117</span></li>
-    <li class="flex gap-2"><span>Queso fundido con chorizo</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$133</span></li>
+    <li class="flex gap-2"><span>Pan Horneado</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$20</span></li>
+    <li class="flex gap-2"><span>Jocoque 125g. con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$76</span></li>
+    <li class="flex gap-2"><span>Guacamole con totopos</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$114</span></li>
+    <li class="flex gap-2"><span>Jícama, zanahoria y  pepino</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$72</span></li>
+    <li class="flex gap-2"><span>Coricos 1kg.</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$180</span></li>
+    <li class="flex gap-2"><span>Queso fundido</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$123</span></li>
+    <li class="flex gap-2"><span> - con chorizo/chilorio</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$140</span></li>
+    <li class="flex gap-2"><span>Nachos con cochinita</span><span class="self-end p-1 grow border-t-2 border-black border-dotted"></span><span>$125</span></li>
   </ul>
 </div>
 <div class="ml-1 flex justify-between max-w-11/12">
@@ -77,11 +78,11 @@
   <h2 class="text-2xl font-semibold text-center">Reservaciones:</h2>
   <div class="flex justify-around items-center">
     <div class="flex flex-col">
-      <a href="https://goo.gl/maps/8GktgZhxGzMXABzV8" target="_blank" class="grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Itaje</a><a href="https://wa.me/5216671058274" target="_blank" class="text-xl"><i class="fa-brands text-green-600 text-xl fa-whatsapp"></i>&thinsp;667 105 82 74</a>
+      <a href="https://goo.gl/maps/8GktgZhxGzMXABzV8" target="_blank" class="grow text-lg font-semibold text-center"><i class="text-red-600 bx bxs-map"></i>&thinsp;Itaje</a><a href="https://wa.me/5216671058274" target="_blank" class="text-xl"><i class="text-green-600 text-xl bx bxl-whatsapp"></i>&thinsp;667 105 82 74</a>
     </div>
         <hr>
     <div class="flex flex-col">
-      <a href="https://goo.gl/maps/8spSZ96hJYvy4bKBA" target="_blank" class="grow text-lg font-semibold text-center"><i class="fa text-red-600 fa-location-dot"></i>&thinsp;Rectoría</a><a href="https://wa.me/5216672023842" target="_blank" class="text-xl"><i class="fa-brands text-green-600 text-xl fa-whatsapp"></i>&thinsp;667 202 38 42</a>
+      <a href="https://goo.gl/maps/8spSZ96hJYvy4bKBA" target="_blank" class="grow text-lg font-semibold text-center"><i class="text-red-600 bx bxs-map"></i>&thinsp;Rectoría</a><a href="https://wa.me/5216672023842" target="_blank" class="text-xl"><i class="text-green-600 text-xl bx bxl-whatsapp"></i>&thinsp;667 202 38 42</a>
     </div>
   </div>
 </footer>
